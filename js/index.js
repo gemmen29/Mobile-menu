@@ -3,9 +3,11 @@ function openMenu() {
 }
 
 window.addEventListener('DOMContentLoaded', () => {
-  document.querySelectorAll('.ddl-menu, .popup-menu a').forEach((el) => {
-    el.addEventListener('click', () => {
-      openMenu();
+  document
+    .querySelectorAll('.close-menu, .ddl-menu, .popup-menu a')
+    .forEach((el) => {
+      el.addEventListener('click', () => {
+        openMenu();
+      });
     });
-  });
 });
